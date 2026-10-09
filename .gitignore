@@ -8,8 +8,6 @@
 
 # Project-Specific Exclusions
 /output/
-*.png
-*.jpg
 
 # Token
 git_token.txt
