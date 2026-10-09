@@ -1,0 +1,15 @@
+# MATLAB Autosave Files
+*.asv
+*.m~
+
+# Large Binary Data & Caches
+*.mat
+*.slxc
+
+# Project-Specific Exclusions
+/output/
+*.png
+*.jpg
+
+# Token
+git_token.txt
