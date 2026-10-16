@@ -23,5 +23,6 @@ This phase simulates the classic 120-degree two-saddle (Golay) coil, the industr
 ![Phase 2.2: Saddle Transverse Field](assets/Saddle_Homogeneity.png)
 
 ## References
+* Xia, Y. (2022). *Essential Concepts in MRI: Physics, Instrumentation, Spectroscopy, and Imaging* (1st ed.). Wiley.
 * Zangwill, A. (2013). *Modern Electrodynamics*. Cambridge University Press.
 * Jin, J.-M. (2015). *Theory and Computation of Electromagnetic Fields*. John Wiley & Sons.
