@@ -2,6 +2,18 @@
 
 This repository contains custom MATLAB-based numerical solvers for simulating the electromagnetic properties of Magnetic Resonance (MR) Radiofrequency (RF) coils. Unlike traditional antennas that radiate into the far-field, MR coils are designed to operate exclusively in the near-field. This project mathematically maps these environments without relying on proprietary commercial toolboxes.
 
+## Fundamental Proof: Near-Field Confinement
+Before mapping specific coil geometries, it is necessary to mathematically prove why this repository relies on the classical static Biot-Savart law rather than full-wave radiation models. 
+
+In *Modern Electrodynamics* (Zangwill, 2013), the near-zone (quasistatic region) for an oscillating source is defined by the characteristic time boundary:
+$$ r \ll c\tau $$
+For an MR RF coil driven by a continuous harmonic oscillation, the characteristic time $\tau$ is the inverse of the angular frequency ($\frac{1}{\omega}$). Substituting this reveals the physical radiansphere limit:
+$$ r \ll \frac{c}{\omega} \rightarrow r \ll \frac{c}{2\pi f} \rightarrow r \ll \frac{\lambda}{2\pi} $$
+
+Because the physical radius of clinical MR hardware remains significantly smaller than the RF wavelength across the entire clinical magnetic field spectrum (0.5T to 7T), the hardware functions as an *electrically small* antenna. This sub-wavelength reality strictly invalidates the far-field Fraunhofer distance ($2D^2 / \lambda$) and confines the patient zone entirely within the reactive near-field. Because the signal propagates across the patient's tissue practically instantaneously, time-retardation is negligible, mathematically clearing us to reduce complex time-dependent Maxwell equations down to classical Biot-Savart numerical solvers.
+
+![Near-Field Proof](assets/NearField_Proof.png)
+
 ## Surface Coil
 A 3D numerical solver built from scratch to calculate the B1 magnetic field distribution of a circular surface coil. The simulation mathematically proves why a surface coil has high signal near the wire but rapid signal drop-off deeper in the tissue.
 
