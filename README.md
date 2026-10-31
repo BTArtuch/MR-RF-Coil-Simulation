@@ -29,9 +29,9 @@ A 3D numerical solver built from scratch to calculate the B1 magnetic field dist
 A simplified model of this surface coil configuration can be simulated in LTspice with the corresponding impedance plot for resonant frequency at 3T.
 
 <p align="center">
-  <img src="assets/LTs_LCR.png" alt="Saddle B-Field" width="265"/>
+  <img src="assets/LTs_LCR.png" alt="Saddle B-Field" width="250"/>
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="assets/LTs_impedance.png" alt="Birdcage B-Field" width="400"/>
+  <img src="assets/LTs_impedance.png" alt="Birdcage B-Field" width="600"/>
 </p>
 
 ## The Two-Saddle Coil 
