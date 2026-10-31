@@ -31,7 +31,7 @@ A simplified model of this surface coil configuration can be simulated in LTspic
 <p align="center">
   <img src="assets/LTs_LCR.png" alt="Saddle B-Field" width="250"/>
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="assets/LTs_impedance.png" alt="Birdcage B-Field" width="600"/>
+  <img src="assets/LTs_impedance.png" alt="Birdcage B-Field" width="800"/>
 </p>
 
 ## The Two-Saddle Coil 
